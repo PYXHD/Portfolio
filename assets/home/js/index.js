@@ -26,7 +26,7 @@ directionBtn.addEventListener("click", () => {
 
 cvBtn.addEventListener("click", () => {
     const link = document.createElement("a");
-    link.href = "/assets/download/CV-CHARVOTMarc.pdf";
+    link.href = "https://pyxhd.github.io/Portfolio/assets/download/CV-CHARVOTMarc.pdf";
     link.download = "CV-CHARVOTMarc.pdf";
     link.click();
 });
