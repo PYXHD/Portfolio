@@ -1,0 +1,218 @@
+@font-face {
+  font-family: Opensans;
+  src: url(../../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Julius;
+  src: url(../../fonts/Julius/JuliusSansOne-Regular.ttf);
+}
+
+// Fonts variables
+$fontPrimary: Julius;
+$fontTitles: Poppins;
+$fontTexts: Opensans;
+
+// Colors
+$darkColor: #0a082e;
+$lightColor: #f5f5f5;
+$accentColor: #00bcd4;
+
+// *, body and main settings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: default;
+}
+body {
+  position: relative;
+  background-color: $darkColor;
+  z-index: -4;
+  transition: 0.2s ease;
+
+  #mousemove {
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 600px 60px $accentColor; // fixed color
+    transform: translate(-50%, -50%);
+    z-index: -3;
+  }
+  #bodyBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/bg-dark.png);
+    background-size: 8vh;
+    z-index: -2;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  }
+  #cvDownload {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    top: 80px;
+    right: 40px;
+    height: 80px;
+    padding: 20px;
+    background-color: $accentColor;
+    border-radius: 40px;
+
+    &:hover .download__container__text {
+      display: flex;
+    }
+
+    .download__container {
+      cursor: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      &__text {
+        cursor: inherit;
+        display: none;
+        font-family: $fontTexts;
+        font-size: 1rem;
+        color: $lightColor;
+      }
+
+      &__icon {
+        cursor: inherit;
+      }
+    }
+  }
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    .portfolio {
+      height: auto;
+    }
+  }
+}
+
+// Titles settings
+// h1 {}
+h2 {
+  font-family: $fontTitles;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 70px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 2rem;
+  }
+}
+p {
+  font-family: $fontTexts;
+  font-size: 1rem;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 0.8rem;
+  }
+}
+.light-p {
+  color: $lightColor;
+  transition: 0.2s ease;
+}
+.dark-p {
+  color: $darkColor;
+  transition: 0.2s ease;
+}
+.socials {
+  position: relative;
+  display: flex;
+  gap: 60px;
+  margin: 20px auto;
+  margin-top: 120px;
+
+  @media screen and (max-width: 900px) {
+    gap: 40px;
+  }
+
+  img {
+    height: 60px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    @media screen and (max-width: 1300px) {
+      height: 45px;
+    }
+    @media screen and (max-width: 900px) {
+      height: 40px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+// Keyframes
+@keyframes slideDownFadeIn {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes slideLeftFadeIn {
+  from {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRightFadeIn {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

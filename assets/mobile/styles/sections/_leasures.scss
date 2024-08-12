@@ -1,0 +1,40 @@
+.leasures {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    min-width: 300px;
+    max-width: 550px;
+
+    .leasure {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      &__img {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        outline: 3px solid $darkColor; // fixed color
+        background-color: $lightColor; // fixed color
+        box-shadow: 8px 8px 5px $darkColor;
+
+        img {
+          width: 50%;
+        }
+      }
+      &__title {
+        font-family: $fontTexts;
+        font-size: 1rem;
+        // color: _textMode.scss
+      }
+    }
+  }
+}

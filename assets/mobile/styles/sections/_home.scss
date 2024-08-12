@@ -1,0 +1,78 @@
+.home {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  &__pic {
+    min-width: 150px;
+    width: 50vw;
+    max-width: 320px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--left {
+      min-width: 125px;
+      width: 40vw;
+      max-width: 170px;
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      z-index: 0;
+      transform: translateX(-50%);
+    }
+
+    &--center {
+      min-width: 140px;
+      width: 45vw;
+      max-width: 190px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      z-index: 1;
+      transform: translateX(-50%);
+    }
+
+    &--right {
+      min-width: 125px;
+      width: 40vw;
+      max-width: 170px;
+      position: absolute;
+      bottom: 0;
+      left: 65%;
+      z-index: 0;
+      transform: translateX(-50%);
+    }
+
+    #homePicSubline {
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-image: linear-gradient(
+        to left,
+        rgba($lightColor, 0),
+        rgba($lightColor, 1) 20%,
+        rgba($lightColor, 1) 80%,
+        rgba($lightColor, 0)
+      );
+      bottom: -2px;
+    }
+  }
+
+  &__jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    &--title {
+      font-family: $fontTitles;
+      font-size: 1.5rem;
+      text-align: center;
+      // color: _textMode.scss;
+      line-height: 1;
+    }
+  }
+}

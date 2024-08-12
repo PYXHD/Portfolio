@@ -1,0 +1,60 @@
+.skills {
+  &__container {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+    outline: 3px solid $darkColor; // fixed color
+    border-radius: 10px;
+    background-color: $lightColor; // fixed color
+    box-shadow: 8px 8px 5px $darkColor;
+
+    &__maintitle {
+      font-family: $fontTexts;
+      font-weight: 900;
+      font-size: 1.2rem;
+      color: $darkColor; // fixed color
+      text-transform: uppercase;
+    }
+
+    &__subcontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+
+      .skill {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &__title {
+          font-family: $fontTexts;
+          font-weight: 700;
+          font-size: 1rem;
+          color: $darkColor; // fixed color
+          text-decoration: underline;
+        }
+        &__img {
+          height: 50px;
+        }
+        &__img-purefront {
+          height: 80px;
+        }
+        &__img-arrow {
+          height: 30px;
+        }
+        &__img-SEM {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

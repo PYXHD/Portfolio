@@ -1,0 +1,84 @@
+.nav {
+  position: fixed;
+  bottom: -260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $accentColor;
+  text-align: center;
+  padding: 20px 20px 40px;
+  transition: 0.3s ease;
+  z-index: 30;
+
+  &__menu {
+    position: relative;
+    width: 100%;
+
+    &__burger {
+      position: absolute;
+      top: -45px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 50%;
+      background-color: $accentColor;
+
+      &.rightHanderBurger {
+        right: 0;
+      }
+      &.leftHanderBurger {
+        left: 0;
+      }
+
+      span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: $lightColor;
+      }
+    }
+    &__list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-family: $fontTitles;
+      font-size: 1.375rem;
+      color: $lightColor;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+
+      #navOverlay {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      #cvDownload {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $darkColor;
+      }
+    }
+    &__settings {
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: 5;
+
+      &.rightHanderSettings {
+        left: 0;
+      }
+      &.leftHanderSettings {
+        right: 0;
+      }
+    }
+  }
+}

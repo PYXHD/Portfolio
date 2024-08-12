@@ -1,0 +1,707 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marc CHARVOT - Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Retrouvez l'ensemble de mes informations et de mes projets"
+    />
+    <meta name="keywords" content="webdesign, développement web, front-end" />
+    <meta name="author" content="Marc CHARVOT" />
+
+    <meta property="og:title" content="Mon portfolio" />
+    <meta
+      property="og:description"
+      content="Retrouvez l'ensemble de mes informations et de mes projets"
+    />
+    <meta property="og:image" content="./assets/img/profile-pic.png" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/svg" href="./assets/img/mw-logo.svg" />
+    <link rel="stylesheet" href="./assets/mobile/styles/index.css" />
+  </head>
+  <body>
+    <nav class="nav" id="navContainer">
+      <div class="nav__menu">
+        <div class="nav__menu__burger rightHanderBurger" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav__menu__list">
+          <div id="navOverlay"></div>
+          <div id="cvDownload">- MON CV EN PDF -</div>
+          <div class="navLink" data-section="skillsSection">Skills</div>
+          <div
+            class="navLink"
+            data-section="detailsSection"
+            data-translate="navDetails"
+          >
+            Diplômes / Expérience
+          </div>
+          <div class="navLink" data-section="portfolioSection">Portfolio</div>
+          <div
+            class="navLink"
+            data-section="leasuresSection"
+            data-translate="navLeasures"
+          >
+            Loisirs
+          </div>
+          <div class="navLink" data-section="contactSection">Contact</div>
+        </div>
+      </div>
+      <img
+        data-section="settingsSection"
+        src="./assets/img/settingsIcon.svg"
+        class="nav__menu__settings navLink rightHanderSettings"
+        id="settingsBtn"
+        alt="Icone Options"
+      />
+    </nav>
+
+    <main class="main darkMain" id="mainFilter">
+      <div id="backgroundElement"></div>
+      <div id="mainBackground" class="darkMainBg"></div>
+      <div class="main__container">
+        <section class="section home">
+          <div class="home__pic">
+            <img
+              src="./assets/img/design-pic.png"
+              class="home__pic--left"
+              id="imgLeft"
+              alt="Photo Webdesigner"
+            />
+            <img
+              src="./assets/img/profile-pic.png"
+              class="home__pic--center"
+              id="imgCenter"
+              alt="Photo de profil"
+            />
+            <img
+              src="./assets/img/dev-pic.png"
+              class="home__pic--right"
+              id="imgRight"
+              alt="Photo developpeur web"
+            />
+            <div id="homePicSubline"></div>
+          </div>
+
+          <div class="home__jobs">
+            <div class="home__jobs--title text-mode">
+              UX/UI <br />
+              Webdesigner
+            </div>
+            <div class="home__jobs--title text-mode">&</div>
+            <div class="home__jobs--title text-mode">Front-end Developer</div>
+          </div>
+        </section>
+
+        <section id="skillsSection" class="section skills">
+          <div class="h2__bannier">
+            <h2>Skills</h2>
+          </div>
+
+          <div class="section__container skills__container">
+            <div class="skills__container__maintitle">Webdesign</div>
+            <div class="skills__container__subcontainer">
+              <div class="skill">
+                <div class="skill__title" data-translate="skills1Title1">
+                  Création graphique / Design
+                </div>
+                <img
+                  src="./assets/img/graphisme-logos.svg"
+                  alt="Icones Photoshop, Illustrator, Indesign"
+                  class="skill__img"
+                />
+              </div>
+              <div class="skill">
+                <div class="skill__title" data-translate="skills1Title2">
+                  Production vidéo
+                </div>
+                <img
+                  src="./assets/img/video-logos.svg"
+                  alt="Icones Premire, After Effets"
+                  class="skill__img"
+                />
+              </div>
+              <div class="skill">
+                <div class="skill__title">UI / UX Design</div>
+                <img
+                  src="./assets/img/proto-logos.svg"
+                  alt="Icones XD, Figma"
+                  class="skill__img"
+                />
+              </div>
+              <div class="skill">
+                <div class="skill__title" data-translate="skills1Title3">
+                  Gestion de contenu
+                </div>
+                <img
+                  src="./assets/img/wp-logo.svg"
+                  alt="Icone Wordpress"
+                  class="skill__img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="skills__container">
+            <div class="skills__container__maintitle">Webmarketing</div>
+            <div class="skills__container__subcontainer">
+              <div class="skill">
+                <div class="skill__title">Content Marketing</div>
+                <img
+                  src="./assets/img/arrow.svg"
+                  alt="Flèche"
+                  class="skill__img-arrow"
+                />
+                <img
+                  src="./assets/img/SEM.png"
+                  alt="PNG SEM"
+                  class="skill__img-SEM"
+                />
+                <img
+                  src="./assets/img/arrow.svg"
+                  alt="Flèche"
+                  class="skill__img-arrow"
+                />
+                <div class="skill__title">Web Analytics</div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__container">
+            <div class="skills__container__maintitle">Dev</div>
+            <div class="skills__container__subcontainer">
+              <div class="skill">
+                <div class="skill__title" data-translate="skills3Title1">
+                  Appris
+                </div>
+                <img
+                  src="./assets/img/purefront-logos.svg"
+                  alt="Icones HTML, CSS, SASS, JS"
+                  class="skill__img-purefront"
+                />
+              </div>
+              <div class="skill">
+                <div class="skill__title" data-translate="skills3Title2">
+                  En cours d'apprentissage
+                </div>
+                <img
+                  src="./assets/img/framework-logos.svg"
+                  alt="Icones Bootstrap, React"
+                  class="skill__img"
+                />
+              </div>
+              <!-- <div class="skill">
+                <div class="skill__title" data-translate="skills3Title3">
+                  En projet
+                </div>
+                <img
+                  src="./assets/img/framework-logos.svg"
+                  alt="Icones"
+                  class="skill__img"
+                />
+              </div> -->
+            </div>
+          </div>
+        </section>
+
+        <section id="detailsSection" class="section details">
+          <div class="h2__bannier">
+            <h2>Diplômes / Expérience</h2>
+          </div>
+
+          <div class="section__container details__container">
+            <div class="details__container__subcontainer">
+              <h3 data-translate="details1MainTitle">Diplômes</h3>
+              <div class="detail">
+                <div class="detail__date">2024</div>
+                <div class="detail__title" data-translate="details1Title1">
+                  Titre R.N.C.P. <br />WebDesigner / UX Designer
+                </div>
+                <div
+                  class="detail__description"
+                  data-translate="details1Description1"
+                >
+                  Diplômé en webdesign à Visiplus Academy en janvier 2024, j'ai
+                  acquis des compétences en conception d'interfaces et
+                  expérience utilisateur, me préparant à créer des sites web
+                  attrayants et fonctionnels. J'ai également découvert le côté
+                  technique du webdesign et développé un intérêt pour le
+                  développement front-end grâce à l'apprentissage de HTML, CSS
+                  et JavaScript.
+                </div>
+                <img
+                  src="./assets/img/arrow.svg"
+                  alt="Flèche"
+                  class="detail__arrow"
+                />
+              </div>
+
+              <div class="detail">
+                <div class="detail__date">2008</div>
+                <div class="detail__title" data-translate="details1Title2">
+                  Baccalauréat Littéraire
+                </div>
+                <div
+                  class="detail__description"
+                  data-translate="details1Description2"
+                >
+                  J'ai obtenu mon Baccalauréat Littéraire en 2008, avec une
+                  passion pour la musique. Cela a enrichi ma sensibilité
+                  artistique et ma compréhension de l'harmonie visuelle, des
+                  atouts essentiels dans mon métier de webdesigner.
+                </div>
+                <img
+                  src="./assets/img/arrow.svg"
+                  alt="Flèche"
+                  class="detail__arrow"
+                />
+              </div>
+            </div>
+
+            <div class="details__container__subcontainer">
+              <h3 data-translate="details2MainTitle">Expérience</h3>
+              <div class="detail">
+                <div class="detail__date" data-translate="details2Date">
+                  Aujourd'hui - 2023
+                </div>
+                <div class="detail__title" data-translate="details2Title1">
+                  La reconversion
+                </div>
+                <div class="detail__exp">
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle1"
+                    >
+                      From Scratch, depuis fév 2024 :
+                    </div>
+                    <div
+                      class="detail__exp__texts__description"
+                      data-translate="details2Description1"
+                    >
+                      Formation Front-end (HTML, CSS, Javascript, React)
+                    </div>
+                  </div>
+
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle2"
+                    >
+                      Visiplus Academy, janv 2024 :
+                    </div>
+                    <div
+                      class="detail__exp__texts__description"
+                      data-translate="details2Description2"
+                    >
+                      Obtention du titre Webdesigner / UX Designer
+                    </div>
+                  </div>
+
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle3"
+                    >
+                      Fév 2023 - Déc 2023 :
+                    </div>
+                    <div class="detail__exp__texts__description">
+                      Executive Bachelor Webdesigner / UX Designer
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/img/arrow.svg"
+                  alt="Flèche"
+                  class="detail__arrow"
+                />
+              </div>
+
+              <div class="detail">
+                <div class="detail__date">2023 - 2017</div>
+                <div class="detail__title" data-translate="details2Title2">
+                  Engagement familial
+                </div>
+                <div class="detail__exp">
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle4"
+                    >
+                      Just Eat, fév 2021 - janv 2023
+                    </div>
+                    <div
+                      class="detail__exp__texts__description"
+                      data-translate="details2Description3"
+                    >
+                      Coursier vélo
+                    </div>
+                  </div>
+
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle5"
+                    >
+                      Sept 2017 - fév 2021 :
+                    </div>
+                    <div
+                      class="detail__exp__texts__description"
+                      data-translate="details2Description4"
+                    >
+                      Père au foyer
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/img/arrow.svg"
+                  alt="Flèche"
+                  class="detail__arrow"
+                />
+              </div>
+
+              <div class="detail">
+                <div class="detail__date">2017 - 2010</div>
+                <div class="detail__title" data-translate="details2Title3">
+                  Développement professionnel
+                </div>
+                <div class="detail__exp">
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle6"
+                    >
+                      Class'Croûte, sept 2015 - sept 2017
+                    </div>
+                    <div
+                      class="detail__exp__texts__description"
+                      data-translate="details2Description5"
+                    >
+                      Employé polyvalent
+                    </div>
+                  </div>
+
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle7"
+                    >
+                      Class'Croûte, août 2012 - sept 2015
+                    </div>
+                    <div
+                      class="detail__exp__texts__description"
+                      data-translate="details2Description6"
+                    >
+                      Chef d'équipe
+                    </div>
+                  </div>
+
+                  <div class="detail__exp__texts">
+                    <div
+                      class="detail__exp__texts__title"
+                      data-translate="details2Subtitle8"
+                    >
+                      Class'Croûte, déc 2010 - août 2012
+                    </div>
+                    <div
+                      class="detail__exp__texts__description"
+                      data-translate="details2Description5"
+                    >
+                      Employé polyvalent
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="./assets/img/arrow.svg"
+                  alt="Flèche"
+                  class="detail__arrow"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolioSection" class="section portfolio">
+          <div class="h2__bannier">
+            <h2>Portfolio</h2>
+          </div>
+
+          <div class="section__container portfolio__container">
+            <div class="project">
+              <a href="https://barbeershop-vp.fr/" target="_blank">
+                <div class="project__title">BarbeerShop</div>
+                <div class="project__img">
+                  <img
+                    src="./assets/img/logo-barbeershop.svg"
+                    alt="Logo BarbeerShop"
+                  />
+                </div>
+                <div class="project__description">
+                  <p
+                    class="project__description__text"
+                    data-translate="project1Description"
+                  >
+                    BarbeerShop est une entreprise fictive nécessitant un site
+                    Internet ainsi qu'une communication marketing pour le web.
+                  </p>
+                  <div
+                    class="project__description__listTitle"
+                    data-translate="project1ListTitle"
+                  >
+                    Compétences employées :
+                  </div>
+                  <ul
+                    class="project__description__list"
+                    data-translate="project1List"
+                  >
+                    <li>- Prototypage, maquettage</li>
+                    <li>- Suite Adobe (Ps, Ai, Pr, ...)</li>
+                    <li>- Gestion de contenu : Wordpress</li>
+                    <li>- Webmarketing</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+
+            <!-- <div class="project">
+              <div class="project__title" data-translate="project2MainTitle">
+                BarbeerShop
+              </div>
+              <div class="project__img">
+                <img src="./assets/img/logo-barbeershop.svg" alt="" />
+              </div>
+              <div class="project__description">
+                <p
+                  class="project__description__text"
+                  data-translate="project2Description"
+                >
+                  BarbeerShop est une entreprise fictive nécessitant un site
+                  Internet ainsi qu'une communication marketing pour le web.
+                </p>
+                <div
+                  class="project__description__listTitle"
+                  data-translate="project2ListTitle"
+                >
+                  Compétences employées :
+                </div>
+                <ul
+                  class="project__description__list"
+                  data-translate="project2List"
+                >
+                  <li>- Prototypage, maquettage</li>
+                  <li>- Suite Adobe (Ps, Ai, Pr, ...)</li>
+                  <li>- Gestion de contenu : Wordpress</li>
+                  <li>- Webmarketing</li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </section>
+
+        <section id="leasuresSection" class="section leasures">
+          <div class="h2__bannier">
+            <h2 data-translate="leasuresMainTitle">Loisirs</h2>
+          </div>
+
+          <div class="section__container leasures__container">
+            <div class="leasure">
+              <div class="leasure__img">
+                <img src="./assets/img/sports.svg" alt="Logo sports" />
+              </div>
+              <div class="leasure__title text-mode" data-translate="leasure1">
+                Sport
+              </div>
+            </div>
+            <div class="leasure">
+              <div class="leasure__img">
+                <img src="./assets/img/code.svg" alt="Logo code" />
+              </div>
+              <div class="leasure__title text-mode">Code</div>
+            </div>
+            <div class="leasure">
+              <div class="leasure__img">
+                <img src="./assets/img/language.svg" alt="Logo langages" />
+              </div>
+              <div class="leasure__title text-mode" data-translate="leasure2">
+                Langues
+              </div>
+            </div>
+            <div class="leasure">
+              <div class="leasure__img">
+                <img src="./assets/img/piano.svg" alt="Logo piano" />
+              </div>
+              <div class="leasure__title text-mode" data-translate="leasure3">
+                Musique
+              </div>
+            </div>
+            <div class="leasure">
+              <div class="leasure__img">
+                <img src="./assets/img/family.svg" alt="Logo famille" />
+              </div>
+              <div class="leasure__title text-mode" data-translate="leasure4">
+                Famille
+              </div>
+            </div>
+            <div class="leasure">
+              <div class="leasure__img">
+                <img src="./assets/img/gamepad.svg" alt="Logo jeux vidéos" />
+              </div>
+              <div class="leasure__title text-mode" data-translate="leasure5">
+                Jeux vidéos
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contactSection" class="section contact">
+          <div class="h2__bannier">
+            <h2>Contact</h2>
+          </div>
+
+          <form class="section__container contact__container" id="form">
+            <div class="socials">
+              <a
+                href="https://www.linkedin.com/in/charvotmarc/"
+                target="_blank"
+              >
+                <img src="./assets/img/logo-linkedin.svg" alt="Logo Linkedin"
+              /></a>
+              <!-- <a href="" target="_blank">
+            <img src="./assets/img/logo-instagram.svg" alt="Logo Instagram"
+          /></a> -->
+              <a
+                href="https://www.frontendmentor.io/profile/PYXHD"
+                target="_blank"
+              >
+                <img
+                  src="./assets/img/logo-frontend.svg"
+                  alt="Logo Frontendmentor"
+              /></a>
+              <a href="https://github.com/PYXHD" target="_blank">
+                <img src="./assets/img/logo-github.svg" alt="Logo Github"
+              /></a>
+            </div>
+            <div class="contact__area">
+              <label for="nameInput" class="text-mode" data-translate="formName"
+                >Nom</label
+              >
+              <input type="text" id="nameInput" required />
+            </div>
+
+            <div class="contact__area">
+              <label for="emailInput" class="text-mode">Email</label>
+              <input type="email" name="mail" id="emailInput" required />
+            </div>
+
+            <div class="contact__area">
+              <label
+                for="subjectInput"
+                class="text-mode"
+                data-translate="formSubject"
+                >Objet</label
+              >
+              <input type="text" id="subjectInput" required />
+            </div>
+
+            <div class="contact__area">
+              <label for="messageInput" class="text-mode">Message</label>
+              <textarea name="message" id="messageInput" required></textarea>
+            </div>
+
+            <div class="check-area">
+              <p class="text-mode" data-translate="formAdvert">
+                *Vos coordonnées ne seront utilisées que pour vous contacter
+                concernant votre demande. Je m'engage à ne pas utiliser vos
+                informations à des fins commerciales ni à les partager avec des
+                tiers.
+              </p>
+            </div>
+            <button class="contact__btn" data-translate="formBtn">
+              <strong>Envoyer</strong>
+            </button>
+          </form>
+        </section>
+
+        <section id="settingsSection" class="section settings">
+          <div class="h2__bannier">
+            <h2 data-translate="settingsMainTitle">Réglages</h2>
+          </div>
+
+          <div class="section__container settings__container">
+            <div class="setting">
+              <div
+                class="setting__title text-mode"
+                data-translate="settingsSet1"
+              >
+                Langue
+              </div>
+              <div class="setting__choices" id="utilsFlag">
+                <img
+                  id="frFlag"
+                  class="setting__choices__img flagSelected"
+                  src="./assets/img/icon-flag-france.png"
+                  alt="Drapeau français"
+                />
+                <img
+                  id="ukFlag"
+                  class="setting__choices__img"
+                  src="./assets/img/icon-flag-uk.png"
+                  alt="Drapeau anglais"
+                />
+              </div>
+            </div>
+
+            <div class="setting">
+              <div class="setting__title text-mode">Mode</div>
+              <div class="setting__choices">
+                <img
+                  id="lightModeBtn"
+                  class="setting__choices__img"
+                  src="./assets/img/icon-light.svg"
+                  alt="Icone lightMode"
+                />
+                <img
+                  id="darkModeBtn"
+                  class="setting__choices__img modeSelected"
+                  src="./assets/img/icon-dark.svg"
+                  alt="Icone darkMode"
+                />
+              </div>
+            </div>
+
+            <div class="setting">
+              <div
+                class="setting__title text-mode"
+                data-translate="settingsSet2"
+              >
+                Gaucher / Droitier
+              </div>
+              <div class="setting__choices">
+                <button
+                  class="setting__choices__btn"
+                  id="leftHanderBtn"
+                  data-translate="settingsSet2Choice1"
+                >
+                  Gaucher
+                </button>
+                <button
+                  class="setting__choices__btn handerSelected"
+                  id="rightHanderBtn"
+                  data-translate="settingsSet2Choice2"
+                >
+                  Droitier
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script type="module" src="./assets/mobile/js/index.js"></script>
+  </body>
+</html>

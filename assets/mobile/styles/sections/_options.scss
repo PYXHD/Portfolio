@@ -1,0 +1,59 @@
+.settings {
+  &__container {
+    width: 100%;
+    max-width: 740px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+
+    .setting {
+      min-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      &__title {
+        font-family: $fontTexts;
+        font-size: 1.375rem;
+        // color: _textMode.scss;
+      }
+      &__choices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+
+        &__img {
+          width: 50px;
+          opacity: 0.2;
+
+          &.flagSelected,
+          &.modeSelected {
+            opacity: 1;
+          }
+        }
+
+        &__btn {
+          height: 50px;
+          width: 120px;
+          opacity: 0.2;
+          background-color: $accentColor;
+          border: none;
+          border-radius: 5px;
+          font-family: $fontTexts;
+          font-size: 1rem;
+          color: $lightColor;
+          outline: none;
+
+          &.handerSelected {
+            opacity: 1;
+            outline: 3px solid $darkColor; // fixed color
+          }
+        }
+      }
+    }
+  }
+}

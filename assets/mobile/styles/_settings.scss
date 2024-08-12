@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Opensans;
+  src: url(../../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+// Fonts variables
+$fontTitles: Poppins;
+$fontTexts: Opensans;
+
+// Colors
+$darkColor: #0a082e;
+$lightColor: #f5f5f5;
+$accentColor: #00bcd4;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  font-style: normal;
+  text-decoration: none;
+  color: unset;
+}
+body {
+  position: relative;
+}
+.section {
+  display: none;
+  min-height: 100vh;
+  padding: 100px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  opacity: 0;
+
+  &.show {
+    display: flex;
+    opacity: 1;
+  }
+
+  &__container {
+    padding: 0 10px;
+  }
+}
+.h2__bannier {
+  position: fixed;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  background-color: $darkColor;
+  padding-top: 10px;
+
+  h2 {
+    font-family: $fontTitles;
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    background-color: $accentColor;
+    color: $lightColor;
+  }
+}
+h3 {
+  font-family: $fontTitles;
+  font-size: 1.375rem;
+  color: $lightColor;
+  text-align: center;
+}

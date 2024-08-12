@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marc CHARVOT - Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Retrouvez l'ensemble de mes informations et de mes projets"
+    />
+    <meta name="keywords" content="webdesign, développement web, front-end" />
+    <meta name="author" content="Marc CHARVOT" />
+
+    <meta property="og:title" content="Mon portfolio" />
+    <meta
+      property="og:description"
+      content="Retrouvez l'ensemble de mes informations et de mes projets"
+    />
+    <meta property="og:image" content="./assets/img/profile-pic.png" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/svg" href="./assets/img/mw-logo.svg" />
+    <link rel="stylesheet" href="./assets/desktop/styles/index.css" />
+  </head>
+
+  <body id="body">
+    <div id="mousemove"></div>
+    <div class="body-bg" id="bodyBg"></div>
+    <div id="cvDownload">
+      <div class="download__container">
+        <div class="download__container__text">Télécharger mon cv</div>
+        <img
+          class="download__container__icon"
+          src="./assets/img/icon-cv.svg"
+          alt="Icone CV"
+        />
+      </div>
+    </div>
+    <nav class="nav" id="navBar">
+      <div class="nav__container">
+        <div class="nav__leftPart">
+          <a href="#header">
+            <img
+              class="nav__leftPart__img"
+              src="./assets/img/mw-logo.svg"
+              alt="Logo du site"
+          /></a>
+          <ul class="nav__list">
+            <li class="nav__list--item dark-p">
+              <a href="#about" class="nav__list--link" data-key="navAbout"
+                >À propos</a
+              >
+            </li>
+            <li class="nav__list--item dark-p">
+              <a href="#experiences" class="nav__list--link" data-key="navExp"
+                >Expérience</a
+              >
+            </li>
+            <li class="nav__list--item dark-p">
+              <a
+                href="#portfolio"
+                class="nav__list--link"
+                data-key="navPortfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav__list--item dark-p">
+              <a href="#contact" class="nav__list--link" data-key="navContact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__utils">
+          <div class="utils__theme">
+            <img
+              id="iconLight"
+              class="utils__theme__img"
+              src="./assets/img/icon-light.svg"
+              alt="Icone lightMode"
+            />
+            <div id="themeToggle">
+              <div id="toggleSlider"></div>
+            </div>
+            <img
+              id="iconDark"
+              class="utils__theme__img"
+              src="./assets/img/icon-dark.svg"
+              alt="Icone darkMode"
+            />
+          </div>
+          <div class="utils__separator"></div>
+          <div class="utils__flags" id="utilsFlag">
+            <img
+              id="frFlag"
+              class="flag flag--selected"
+              src="./assets/img/icon-flag-france.png"
+              alt="Icone drapeau français"
+            />
+            <img
+              id="ukFlag"
+              class="flag"
+              src="./assets/img/icon-flag-uk.png"
+              alt="Icone drapeau anglais"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header" id="header">
+      <div class="header__container">
+        <div class="header__jobs header__jobs--show" id="headerJobs">
+          <div class="header__jobs--title light-p">UX/UI <br />Webdesigner</div>
+          <div class="header__jobs--title light-p">
+            Front-end <br />Developer
+          </div>
+        </div>
+        <div class="header__photo">
+          <img
+            src="./assets/img/design-pic.png"
+            class="header__photo--left"
+            id="imgLeft"
+            alt="Photo Webdesign"
+          />
+          <img
+            src="./assets/img/profile-pic.png"
+            class="header__photo--center"
+            id="imgCenter"
+            alt="Photo de profil"
+          />
+          <img
+            src="./assets/img/dev-pic.png"
+            class="header__photo--right"
+            id="imgRight"
+            alt="Photo developpeur web"
+          />
+          <div id="headerSubline"></div>
+        </div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/charvotmarc/" target="_blank">
+            <img src="./assets/img/logo-linkedin.svg" alt="Logo Linkedin"
+          /></a>
+          <!-- <a href="" target="_blank">
+            <img src="./assets/img/logo-instagram.svg" alt="Logo Instagram"
+          /></a> -->
+          <a href="https://www.frontendmentor.io/profile/PYXHD" target="_blank">
+            <img src="./assets/img/logo-frontend.svg" alt="Logo Frontendmentor"
+          /></a>
+          <a href="https://github.com/PYXHD" target="_blank">
+            <img src="./assets/img/logo-github.svg" alt="Logo Github"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about" id="about">
+        <h2 class="light-p" data-key="aboutH2">À propos</h2>
+        <div class="about__nav">
+          <button
+            class="about__btn about__btn--selected"
+            data-target="portrait"
+            data-key="portraitBtn"
+          >
+            Portrait
+          </button>
+          <button
+            class="about__btn"
+            data-target="leasures"
+            data-key="leasuresBtn"
+          >
+            Loisirs
+          </button>
+          <button class="about__btn" data-target="skills" data-key="skillsBtn">
+            Skills
+          </button>
+          <button
+            class="about__btn"
+            data-target="degrees"
+            data-key="degreesBtn"
+          >
+            Diplômes
+          </button>
+        </div>
+        <div class="about__container">
+          <div class="portrait" data-content="portrait">
+            <div class="portrait__container" id="portraitContainerA">
+              <div class="portrait__container__title" data-key="portraitTitle1">
+                À l'origine : une reconversion professionnelle
+              </div>
+              <div class="portrait__container__texts">
+                <p class="light-p" data-key="portraitText1">
+                  C’est à l’occasion d’un bilan de compétences que j’ai eu la
+                  possibilité de remettre en perspective mon avenir
+                  professionnel. Ce bilan a mis en évidence ma polyvalence
+                  naturelle ainsi que ma créativité instinctive.
+                </p>
+                <p class="light-p" data-key="portraitText2">
+                  Je me suis donc dirigé vers le domaine du Web, et plus
+                  particulièrement celui du Webdesign. Passionné par ce domaine
+                  étant plus jeune, j’ai redécouvert ce milieu à l’occasion de
+                  ma formation chez Visiplus Academy et je n’ai cessé depuis de
+                  m’autoformer, notamment dans le domaine technique des langages
+                  de programmation pour lesquels je me suis découvert un intérêt
+                  particulier. Ce bilan professionnel m’a également permis de
+                  mieux me comprendre et d’appréhender mes propres mécanismes
+                  d’apprentissage que je mets en pratique depuis afin d’évoluer
+                  dans les domaines qui me tiennent à cœur.
+                </p>
+              </div>
+            </div>
+
+            <div class="portrait__container" id="portraitContainerB">
+              <div class="portrait__container__title" data-key="portraitTitle2">
+                Ma personnalité en quelques mots
+              </div>
+              <div class="portrait__container__texts">
+                <p class="light-p" data-key="portraitText3">
+                  Animé par une curiosité naturelle, j'aime explorer diverses
+                  compétences, que ce soit dans mon travail ou ma vie
+                  personnelle. Je m'investis pleinement dans chaque projet,
+                  cherchant toujours à aller au bout des choses.
+                </p>
+                <p class="light-p" data-key="portraitText4">
+                  En tant que père, je prends mes responsabilités très au
+                  sérieux et je suis capable de gérer le stress et les imprévus
+                  avec calme. Mon sens de l'organisation et de la rigueur joue
+                  un rôle crucial dans la réussite de mes projets.
+                </p>
+                <p class="light-p" data-key="portraitText5">
+                  Le sport occupe également une place importante dans ma vie,
+                  bien au-delà de l'exercice physique. Il nourrit ma
+                  personnalité en me poussant à relever des défis et à me
+                  dépasser constamment. Ma discipline et ma persévérance sont
+                  des traits qui me caractérisent et qui guident mes actions au
+                  quotidien.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="leasures" data-content="leasures">
+            <div class="leasures__container">
+              <div
+                class="leasures__img leasures__img--selected"
+                data-leasure="sports"
+              >
+                <img src="./assets/img/sports.svg" alt="Icone Sports" />
+              </div>
+              <div class="leasures__img" data-leasure="code">
+                <img src="./assets/img/code.svg" alt="Icone Code" />
+              </div>
+              <div class="leasures__img" data-leasure="language">
+                <img src="./assets/img/language.svg" alt="Icone Langages" />
+              </div>
+            </div>
+            <div class="leasures__container">
+              <div class="leasures__img" data-leasure="piano">
+                <img src="./assets/img/piano.svg" alt="Icone Piano" />
+              </div>
+              <div class="leasures__img" data-leasure="family">
+                <img src="./assets/img/family.svg" alt="Icone Famille" />
+              </div>
+              <div class="leasures__img" data-leasure="gamepad">
+                <img src="./assets/img/gamepad.svg" alt="Icone Jeux vidéos" />
+              </div>
+            </div>
+            <div class="leasures__description" id="leasureDescription">
+              <div
+                class="leasure__title light-p"
+                id="leasureTitle"
+                data-key="leasureTitleSports"
+              >
+                Sport
+              </div>
+              <div class="leasure__text light-p" id="leasureText">
+                <p data-key="leasureTextSports1">
+                  La pratique régulière du sport améliore mon bien-être physique
+                  et psychologique, offrant un équilibre essentiel dans ma vie.
+                </p>
+                <p data-key="leasureTextSports2">
+                  Mes activités habituelles sont le cyclisme et la musculation,
+                  pratiqués à un niveau amateur. Cette expérience m'a également
+                  enseigné des valeurs comme la ténacité et l'ambition,
+                  bénéfiques dans ma reconversion professionnelle.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills" data-content="skills">
+            <div class="skills__container">
+              <div
+                class="skills__container__maintitle"
+                data-key="skills1Maintitle"
+              >
+                Webdesign
+              </div>
+              <div class="skills__container__subcontainer">
+                <div class="skill">
+                  <div class="skill__title" data-key="skills1Title1">
+                    Création graphique / Design
+                  </div>
+                  <img
+                    src="./assets/img/graphisme-logos.svg"
+                    alt="Icones Photoshop, Illustrator, Indesign"
+                    class="skill__img"
+                  />
+                </div>
+                <div class="skill">
+                  <div class="skill__title" data-key="skills1Title2">
+                    Production vidéo
+                  </div>
+                  <img
+                    src="./assets/img/video-logos.svg"
+                    alt="Icones Premiere, After Effects"
+                    class="skill__img"
+                  />
+                </div>
+                <div class="skill">
+                  <div class="skill__title" data-key="skills1Title3">
+                    UI / UX Design
+                  </div>
+                  <img
+                    src="./assets/img/proto-logos.svg"
+                    alt="Icones XD, Figma"
+                    class="skill__img"
+                  />
+                </div>
+                <div class="skill">
+                  <div class="skill__title" data-key="skills1Title4">
+                    Gestion de contenu
+                  </div>
+                  <img
+                    src="./assets/img/wp-logo.svg"
+                    alt="Icone Wordpress"
+                    class="skill__img"
+                    id="wpLogo"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="skills__container">
+              <div
+                class="skills__container__maintitle"
+                data-key="skills2Maintitle"
+              >
+                Webmarketing
+              </div>
+              <div class="skills__container__subcontainer">
+                <div class="skill">
+                  <div class="skill__title" data-key="skills2Title1">
+                    Content Marketing
+                  </div>
+                  <img
+                    src="./assets/img/arrow.svg"
+                    alt="Flèche"
+                    class="skill__img-arrow"
+                  />
+                  <img
+                    src="./assets/img/SEM.png"
+                    alt="PNG SEM"
+                    class="skill__img-SEM"
+                  />
+                  <img
+                    src="./assets/img/arrow.svg"
+                    alt="Flèche"
+                    class="skill__img-arrow"
+                  />
+                  <div class="skill__title" data-key="skills2Title2">
+                    Web Analytics
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skills__container">
+              <div
+                class="skills__container__maintitle"
+                data-key="skills3Maintitle"
+              >
+                Dev
+              </div>
+              <div class="skills__container__subcontainer">
+                <div class="skill">
+                  <div class="skill__title" data-key="skills3Title1">
+                    Appris
+                  </div>
+                  <img
+                    src="./assets/img/purefront-logos.svg"
+                    alt="Icones HTML, CSS, SASS, JS"
+                    class="skill__img-purefront"
+                  />
+                </div>
+                <div class="skill">
+                  <div class="skill__title" data-key="skills3Title2">
+                    En cours d'apprentissage
+                  </div>
+                  <img
+                    src="./assets/img/framework-logos.svg"
+                    alt="Icones Bootstrap, React"
+                    class="skill__img"
+                  />
+                </div>
+                <!-- <div class="skill">
+                  <div class="skill__title" data-key="skills3Title3">
+                    En projet
+                  </div>
+                  <img
+                    src="./assets/img/framework-logos.svg"
+                    alt=""
+                    class="skill__img"
+                  />
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="degrees" data-content="degrees" id="degree">
+            <div class="degrees__container" id="degreesContainerA">
+              <div class="degrees__container__title" data-key="degreesTitle1">
+                Titre R.N.C.P. WebDesigner / UX Designer
+              </div>
+              <div class="degrees__container__texts">
+                <p class="light-p" data-key="degreesText1">
+                  OBTENU EN JANVIER 2024
+                </p>
+                <p class="light-p" data-key="degreesText2">
+                  J'ai obtenu mon diplôme en webdesign à Visiplus Academy en
+                  janvier 2024. Cette formation m'a permis d'acquérir des
+                  compétences en conception d'interfaces utilisateur et en
+                  expérience utilisateur, et d'acquérir une solide compréhension
+                  des principes du design digital. Cela m'a préparé à créer des
+                  sites web attrayants, intuitifs et fonctionnels, répondant aux
+                  besoins des utilisateurs de manière efficace.
+                </p>
+                <p class="light-p" data-key="degreesText3">
+                  De plus, cette expérience m'a également ouvert les portes du
+                  côté technique du webdesign. En apprenant les bases des
+                  langages de programmation comme HTML, CSS et JavaScript, j'ai
+                  développé un intérêt profond pour le développement front-end.
+                </p>
+              </div>
+            </div>
+
+            <div class="degrees__container" id="degreesContainerB">
+              <div class="degrees__container__title" data-key="degreesTitle2">
+                Baccalauréat Littéraire
+              </div>
+              <div class="degrees__container__texts">
+                <p class="light-p" data-key="degreesText4">OBTENU EN 2008</p>
+                <p class="light-p" data-key="degreesText5">
+                  J'ai obtenu mon Baccalauréat Littéraire en 2008, avec une
+                  passion particulière pour la musique. Cette formation m'a non
+                  seulement enrichi sur le plan académique mais a également
+                  renforcé ma sensibilité artistique.
+                </p>
+                <p class="light-p" data-key="degreesText6">
+                  La musique, en tant qu'expression profonde de créativité et
+                  d'émotion, enrichit ma compréhension de l'harmonie visuelle et
+                  de l'expérience utilisateur immersive, des aspects cruciaux
+                  dans mon métier actuel de webdesigner.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experiences" id="experiences">
+        <h2 class="light-p">Expérience</h2>
+        <div class="experiences__container">
+          <div class="carousel" id="carousel">
+            <div class="item item__visible">
+              <div class="item__dates" data-key="expDate">
+                Aujourd'hui - 2023
+              </div>
+              <img
+                src="./assets/img/icon-reconversion.svg"
+                alt="Icone reconversion"
+                class="item__img"
+              />
+              <div class="item__title" data-key="exp1Title">Reconversion</div>
+              <div class="item__exp">
+                <div class="item__exp__title" data-key="exp1Subtitle1">
+                  From Scratch
+                </div>
+                <div class="item__exp__texts">
+                  <p data-key="exp1Text1">
+                    <strong
+                      >Depuis février 2024 : Formation Front-end (HTML, CSS,
+                      Javascript, React)</strong
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="item__exp">
+                <div class="item__exp__title" data-key="exp1Subtitle2">
+                  Visiplus Academy
+                </div>
+                <div class="item__exp__texts">
+                  <p data-key="exp1Text2">
+                    <strong
+                      >Janvier 2024 : Obtention du titre Webdesigner / UX
+                      designer</strong
+                    >
+                  </p>
+                  <p data-key="exp1Text3">
+                    <strong
+                      >Février 2023 - Décembre 2023 : Executive Bachelor
+                      Webdesigner / UX Designer</strong
+                    >
+                    <br />
+                    <em
+                      >- Elaboration d'un site Internet pour un client
+                      fictif</em
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__dates">2023 - 2017</div>
+              <img
+                src="./assets/img/icon-family.svg"
+                alt="Icone famille"
+                class="item__img"
+              />
+              <div class="item__title" data-key="exp2Title">
+                Engagement familial
+              </div>
+              <div class="item__exp">
+                <div class="item__exp__title" data-key="exp2Subtitle1">
+                  Just Eat
+                </div>
+                <div class="item__exp__texts">
+                  <p data-key="exp2Text1">
+                    <strong>Février 2021 - Janvier 2023 : Coursier Vélo </strong
+                    ><br />
+                    <em
+                      >- Livraison de commandes du restaurant au client <br />
+                      - Gestion efficace du temps pour concilier travail et
+                      responsabilités familiales</em
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="item__exp">
+                <div class="item__exp__title" data-key="exp2Subtitle2">
+                  Père au foyer
+                </div>
+                <div class="item__exp__texts">
+                  <p data-key="exp2Text2">
+                    <strong
+                      >Septembre 2017 - Février 2021 : Père au foyer</strong
+                    ><br />
+                    <em
+                      >- Gestion des responsabilités domestiques et familiales
+                      <br />
+                      - Organisation du quotidien <br />
+                      - Prise en charge des besoins des enfants</em
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="item__dates">2017 - 2010</div>
+              <img
+                src="./assets/img/icon-stairs.svg"
+                alt="Icone Progression"
+                class="item__img"
+              />
+              <div class="item__title" data-key="exp3Title">
+                Développement professionnel
+              </div>
+              <div class="item__exp">
+                <div class="item__exp__title" data-key="exp3Subtitle1">
+                  Class'Croûte Part-Dieu
+                </div>
+                <div class="item__exp__texts">
+                  <p data-key="exp3Text2">
+                    <strong
+                      >Septembre 2015 - Septembre 2017 : Employé
+                      polyvalent</strong
+                    >
+                    <br />
+                    <em
+                      >- Gestion de caisse/ Service client / Livraison de
+                      repas</em
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="item__exp">
+                <div class="item__exp__title" data-key="exp3Subtitle2">
+                  Class'Croûte Cité Internationale
+                </div>
+                <div class="item__exp__texts">
+                  <p data-key="exp3Text3">
+                    <strong>Août 2012 - Septembre 2015 : Chef d'équipe</strong
+                    ><br />
+                    <em>- Service client / Gestion de stock / Leadership</em>
+                  </p>
+                  <p data-key="exp3Text4">
+                    <strong
+                      >Décembre 2010 - Août 2012 : Employé polyvalent </strong
+                    ><br />
+                    <em
+                      >- Elaboration d'un site Internet pour un client
+                      fictif</em
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel__btn carousel__btn--left" id="btnLeft">
+              &#9664;
+            </button>
+            <button class="carousel__btn carousel__btn--right" id="btnRight">
+              &#9654;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <h2 class="light-p">Portfolio</h2>
+        <div class="portfolio__container">
+          <div class="project">
+            <div class="project__explain">
+              <div class="project__title">Color Artboard</div>
+              <div class="project__texts">
+                <div class="project__texts__container">
+                  <p class="light-p" data-key="project1Subtitle1">
+                    <strong>
+                      Application web interactive de dessin en ligne</strong
+                    >
+                  </p>
+                  <p class="details light-p" data-key="project1Text1">
+                    Les utilisateurs peuvent choisir parmi une large palette de
+                    couleurs, ajuster la taille du pinceau et dessiner librement
+                    sur une toile numérique. L'application inclut des
+                    fonctionnalités d'annulation des actions et de
+                    réinitialisation de la toile.
+                  </p>
+                </div>
+                <div class="project__texts__container">
+                  <p class="light-p" data-key="project1Subtitle2">
+                    <strong>Compétences employées :</strong>
+                  </p>
+                  <ul class="light-p" data-key="project1Text2">
+                    <li>Manipulation du DOM</li>
+                    <li>Mouse events</li>
+                    <li>Gestion du Canvas</li>
+                    <li>Mise à jour dynamique de l'interface</li>
+                    <li>Throttling</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="https://pyxhd.github.io/App_Color-Artboard/">
+              <img
+                src="./assets/img/colorArtwork.png"
+                alt="Application Color Artboard"
+                class="project__img"
+              />
+            </a>
+          </div>
+          <div class="project project--right">
+            <a href="https://barbeershop-vp.fr/" target="_blank">
+              <img
+                src="./assets/img/barbeershop.png"
+                alt="Site BarbeerShop"
+                class="project__img"
+              />
+            </a>
+            <div class="project__explain">
+              <div class="project__title project__title--right">
+                BarbeerShop
+              </div>
+              <div class="project__texts">
+                <div class="project__texts__container">
+                  <p class="light-p" data-key="project2Subtitle1">
+                    <strong> Etude de cas pour Visiplus (examen final)</strong>
+                  </p>
+                  <p class="details light-p" data-key="project2Text1">
+                    BarbeerShop est une entreprise fictive nécessitant un site
+                    Internet ainsi qu'une communication marketing pour le web.
+                  </p>
+                </div>
+                <div class="project__texts__container">
+                  <p class="light-p" data-key="project2Subtitle2">
+                    <strong>Compétences employées :</strong>
+                  </p>
+                  <ul class="light-p" data-key="project2Text2">
+                    <li>Prototypage, Maquettage</li>
+                    <li>Suite Adobe (Ps, Ai, Pr, ...)</li>
+                    <li>Gestion de contenu: Wordpress</li>
+                    <li>Webmarketing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="light-p">Contact</h2>
+        <form class="contact__container" id="form">
+          <div class="contact__area">
+            <label for="nameInput" class="light-p" data-key="formName"
+              >Nom</label
+            >
+            <input type="text" id="nameInput" required />
+          </div>
+
+          <div class="contact__area">
+            <label for="emailInput" class="light-p" data-key="formMail"
+              >Email</label
+            >
+            <input type="email" name="mail" id="emailInput" required />
+          </div>
+
+          <div class="contact__area">
+            <label for="subjectInput" class="light-p" data-key="formSubject"
+              >Objet</label
+            >
+            <input type="text" id="subjectInput" required />
+          </div>
+
+          <div class="contact__area">
+            <label for="messageInput" class="light-p" data-key="formText"
+              >Message</label
+            >
+            <textarea name="message" id="messageInput" required></textarea>
+          </div>
+
+          <div class="check-area">
+            <input type="checkbox" name="checkbox" class="light-p" required />
+            <p class="light-p" data-key="formAdvert">
+              En cochant cette case, vous acceptez que vos coordonnées soient
+              utilisées uniquement pour vous contacter concernant votre demande.
+              Je m'engage à ne pas utiliser vos informations à des fins
+              commerciales ni à les partager avec des tiers.
+            </p>
+          </div>
+          <button class="contact__btn" data-key="formBtn">
+            <strong>Envoyer</strong>
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script type="module" src="./assets/desktop/js/index.js"></script>
+  </body>
+</html>
