@@ -14,7 +14,7 @@ function closeNav() {
             element.style.opacity = "0";
         });
         navOverlay.style.display = "block";
-        navContainer.style.bottom = "-300px";
+        navContainer.style.bottom = "-320px";
         menuOpen = false;
     }
 }

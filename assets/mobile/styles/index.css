@@ -81,7 +81,7 @@ h3 {
 
 .nav {
   position: fixed;
-  bottom: -300px;
+  bottom: -320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
