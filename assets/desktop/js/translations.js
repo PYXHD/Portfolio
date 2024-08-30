@@ -91,7 +91,7 @@ export const translations = {
         exp3Text2: `<strong>September 2015 - September 2017: Versatile Employee</strong><br /><em>- Cash register management / Customer service / Meal delivery</em>`,
         exp3Subtitle2: "Class'Croûte Cité Internationale",
         exp3Text3: `<strong>August 2012 - September 2015: Team Leader</strong><br /><em>- Customer service / Stock management / Leadership</em>`,
-        exp3Text4: `<strong>December 2010 - August 2012: Versatile Employee</strong><br /><em>- Creation of a website for a fictional client</em>`,
+        exp3Text4: `<strong>December 2010 - August 2012: Versatile Employee</strong><br /><em>- Cash register management / Customer service</em>`,
 
         // Portfolio
         project1Subtitle1: `<strong>Interactive Online Drawing Web Application</strong>`,
@@ -217,7 +217,7 @@ export const translations = {
         exp3Text2: `<strong>Septembre 2015 - Septembre 2017 : Employé polyvalent</strong><br /><em>- Gestion de caisse/ Service client / Livraison de repas</em>`,
         exp3Subtitle2: "Class'Croûte Cité Internationale",
         exp3Text3: `<strong>Août 2012 - Septembre 2015 : Chef d'équipe</strong><br /><em>- Service client / Gestion de stock / Leadership</em>`,
-        exp3Text4: `<strong>Décembre 2010 - Août 2012 : Employé polyvalent </strong><br /><em>- Elaboration d'un site Internet pour un client fictif</em>`,
+        exp3Text4: `<strong>Décembre 2010 - Août 2012 : Employé polyvalent </strong><br /><em>- Gestion de caisse/ Service client</em>`,
 
         // Portfolio
         project1Subtitle1: `<strong>Application web interactive de dessin en ligne</strong>`,
