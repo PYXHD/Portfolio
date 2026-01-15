@@ -1,0 +1,141 @@
+@use "../settings/variables" as var;
+@use "../settings//mixins" as mix;
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.skills {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  @include mix.flex($direction: column);
+  z-index: 1;
+
+  &_spacer {
+    flex: 1;
+
+    &.top {
+      min-height: 80px;
+    }
+    &.bottom {
+      min-height: 10px;
+    }
+  }
+
+  &_inner {
+    height: 100%;
+    max-height: 800px;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    @include mix.flex($direction: column, $justify: space-between);
+
+    background-color: rgba(var.$color-white, 0.15);
+    border: 1px solid rgba(var.$color-white, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+
+    @media (max-height: 600px) {
+      justify-content: center;
+    }
+  }
+
+  // background
+  &_bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 300px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.1;
+    pointer-events: none;
+    animation: rotate 40s linear infinite;
+  }
+
+  // about
+  &_about {
+    width: 100%;
+    @include mix.flex($direction: column, $align: flex-start);
+
+    @media (max-height: 600px) {
+      display: none;
+    }
+  }
+
+  &_titleInner {
+    @include mix.flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &_title {
+    @include mix.aboutTitle;
+  }
+
+  &_line {
+    height: 2px;
+    background-color: var.$color-white;
+    flex-grow: 1;
+    margin-left: 10px;
+    opacity: 0.4;
+  }
+
+  &_details {
+    @include mix.text;
+  }
+
+  // list
+  &_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    grid-template-areas:
+      "stack design"
+      "stack langues";
+    width: 100%;
+  }
+
+  &_stack {
+    grid-area: stack;
+  }
+  &_design {
+    grid-area: design;
+  }
+  &_languages {
+    grid-area: langues;
+    align-self: end;
+  }
+
+  &_stackIcons {
+    width: 100%;
+    @include mix.flex($direction: column, $justify: center);
+    gap: 20px;
+  }
+
+  &_stackSubDiv {
+    @include mix.flex;
+    gap: 40px;
+    width: 100%;
+  }
+
+  &_flag {
+    @include mix.flex($direction: column);
+
+    & .level {
+      @include mix.text;
+      text-indent: 0;
+    }
+  }
+}

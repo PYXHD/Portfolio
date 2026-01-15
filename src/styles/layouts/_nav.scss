@@ -1,0 +1,53 @@
+@use "../settings/variables" as var;
+@use "../settings/mixins" as mix;
+
+.nav {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+
+  height: 50px;
+  width: 300px;
+
+  @include mix.flex;
+
+  background-color: rgba(var.$color-white, 0.15);
+  border: 1px solid rgba(var.$color-white, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+
+  &_list {
+    width: 100%;
+    @include mix.flex($justify: space-around);
+
+    li {
+      @include mix.flex;
+
+      &.skillsDisplay {
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+
+      a {
+        height: 46px;
+        width: 46px;
+        @include mix.flex;
+        color: var.$color-white;
+        opacity: 0.8;
+        transform: scale(1);
+        transition: transform ease 0.1s, color ease 0.1s;
+
+        &:hover {
+          transform: scale(1.15);
+          color: var.$color-lightBlue;
+        }
+      }
+    }
+  }
+}

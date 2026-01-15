@@ -1,27 +1,13 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preload" as="image" href="/public/profilePic.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marc CHARVOT - Portfolio</title>
-
-    <link rel="icon" type="image/svg" href="./assets/img/mw-logo.svg" />
-    <link rel="stylesheet" href="./assets/home/styles/index.css" />
+    <title>portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <div class="photo__container">
-        <img src="./assets/img/pic.svg" alt="" class="photo" />
-        <div id="photoSubline"></div>
-      </div>
-      <div class="name">Marc CHARVOT</div>
-
-      <div class="btns-container">
-        <button id="directionBtn">Accéder au Portfolio</button>
-        <button id="cvBtn">Télécharger mon CV</button>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script defer type="module" src="/src/main.jsx"></script>
   </body>
-
-  <script src="./assets/home/js/index.js"></script>
 </html>

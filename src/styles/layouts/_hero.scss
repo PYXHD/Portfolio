@@ -1,0 +1,97 @@
+@use "../settings/variables" as var;
+@use "../settings//mixins" as mix;
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  @include mix.flex($direction: column);
+
+  &_spacer {
+    flex: 1;
+
+    &.top {
+      min-height: 80px;
+    }
+    &.bottom {
+      min-height: 10px;
+    }
+  }
+  &_inner {
+    height: 100%;
+    max-height: 700px;
+    @include mix.flex($direction: column, $justify: space-around);
+  }
+  // persona
+  &_persona {
+    @include mix.flex($direction: column);
+    gap: 15px;
+
+    img {
+      height: 170px;
+      width: 170px;
+
+      @media (max-height: 600px) {
+        display: none;
+      }
+    }
+
+    h1 {
+      @include mix.mainTitle;
+    }
+  }
+
+  &_job {
+    @include mix.secondTitle;
+  }
+
+  &_motive {
+    @include mix.describe;
+  }
+
+  // medias
+  &_medias {
+    @include mix.flex;
+    gap: 40px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      height: 3px;
+      width: 130%;
+      background-color: var.$color-white;
+      //   opacity: 0.4;
+    }
+  }
+
+  &_link {
+    height: 46px;
+    width: 46px;
+    @include mix.flex;
+    transform: scale(1);
+    transition: transform ease 0.1s;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  &_linkCV {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: var.$color-white;
+    font-family: var.$font-semibold;
+    color: var.$color-darkBlue;
+  }
+
+  // button
+  &_btn {
+    @include mix.cta-red;
+    text-transform: uppercase;
+  }
+}

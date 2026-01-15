@@ -1,0 +1,113 @@
+@use "./variables" as v;
+
+// titles
+@mixin mainTitle {
+  font-family: v.$font-semibold;
+  font-size: v.$fontSize-xxl;
+  color: v.$color-white;
+}
+
+@mixin secondTitle {
+  font-family: v.$font-semibold;
+  font-size: v.$fontSize-xl;
+  color: v.$color-white;
+}
+
+@mixin aboutTitle {
+  font-family: v.$font-semibold;
+  font-size: v.$fontSize-l;
+  color: v.$color-white;
+}
+
+@mixin projectTitle {
+  font-family: v.$font-semibold;
+  font-size: v.$fontSize-l;
+  color: v.$color-lightBlue;
+}
+
+// texts
+@mixin describe {
+  font-family: v.$font-basic;
+  font-size: v.$fontSize-m;
+  font-style: italic;
+  color: v.$color-lightBlue;
+  text-align: center;
+}
+
+@mixin text {
+  font-family: v.$font-basic;
+  font-size: v.$fontSize-m;
+  color: v.$color-white;
+  text-align: justify;
+  text-indent: 1rem;
+}
+
+@mixin date {
+  font-family: v.$font-semibold;
+  font-size: v.$fontSize-s;
+  color: v.$color-lightBlue;
+}
+
+@mixin copyright {
+  font-family: v.$font-basic;
+  font-size: v.$fontSize-xs;
+  color: v.$color-white;
+}
+
+// buttons
+@mixin cta-red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  font-family: v.$font-semibold;
+  font-size: v.$fontSize-l;
+  color: v.$color-white;
+  border-radius: 10px;
+  background-color: v.$color-red;
+  cursor: pointer;
+  transition: background-color ease 0.1s;
+
+  &:hover {
+    background-color: #ff8a65;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+@mixin cta-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 200px;
+  border: 4px solid v.$color-lightBlue;
+  border-radius: 10px;
+  font-family: v.$font-semibold;
+  font-size: v.$fontSize-l;
+  color: v.$color-lightBlue;
+  text-decoration: underline;
+  background-color: rgba(v.$color-white, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: background-color ease 0.1s;
+
+  &:hover {
+    background-color: rgba(v.$color-white, 0.25);
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// position
+@mixin flex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
