@@ -28,8 +28,18 @@ function Artboard() {
         </p>
       </div>
       <div className="project_btnInner">
-        <a className="project_redBtn">Visiter le site</a>
-        <a className="project_blueBtn">
+        <a
+          href="https://pyxhd.github.io/App_Color-Artboard/"
+          target="_blank"
+          className="project_redBtn"
+        >
+          Visiter le site
+        </a>
+        <a
+          href="https://github.com/PYXHD/App_Color-Artboard"
+          target="_blank"
+          className="project_blueBtn"
+        >
           <img src={blueGithub} alt="Github Icon" />
           <div>Repository</div>
         </a>
