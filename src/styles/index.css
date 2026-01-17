@@ -368,8 +368,8 @@ select {
   background-color: #edf3ff;
 }
 .hero_link {
-  height: 46px;
-  width: 46px;
+  height: 50px;
+  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

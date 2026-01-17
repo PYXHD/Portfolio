@@ -30,7 +30,12 @@ function Hero() {
           >
             <img src={iconGithub} alt="Icone Github" />
           </a>
-          <a href="" target="_blank" className="hero_link hero_linkCV">
+          <a
+            href="/CV_marc_charvot.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero_link hero_linkCV"
+          >
             CV
           </a>
         </div>

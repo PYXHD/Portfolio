@@ -69,8 +69,8 @@
   }
 
   &_link {
-    height: 46px;
-    width: 46px;
+    height: 50px;
+    width: 50px;
     @include mix.flex;
     transform: scale(1);
     transition: transform ease 0.1s;
