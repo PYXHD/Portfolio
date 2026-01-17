@@ -31,7 +31,7 @@ function Hero() {
             <img src={iconGithub} alt="Icone Github" />
           </a>
           <a
-            href="/CV_marc_charvot.pdf"
+            href="{`${import.meta.env.BASE_URL}CV_marc_charvot.pdf`}"
             target="_blank"
             rel="noopener noreferrer"
             className="hero_link hero_linkCV"
