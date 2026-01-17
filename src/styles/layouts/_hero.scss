@@ -3,6 +3,7 @@
 
 .hero {
   height: 100vh;
+  height: 100dvh;
   width: 100%;
   @include mix.flex($direction: column);
 
