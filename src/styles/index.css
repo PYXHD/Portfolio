@@ -195,11 +195,6 @@ select {
   z-index: 10;
   pointer-events: none;
 }
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
 .nav_list {
   width: 100%;
   display: -webkit-box;
@@ -689,7 +684,6 @@ select {
 }
 
 .projects {
-  min-height: auto;
   width: 100%;
   max-width: 1200px;
   display: -webkit-box;

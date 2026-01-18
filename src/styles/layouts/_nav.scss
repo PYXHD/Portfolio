@@ -21,10 +21,6 @@
   z-index: 10;
   pointer-events: none;
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-
   &_list {
     width: 100%;
     @include mix.flex($justify: space-around);
