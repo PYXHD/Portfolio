@@ -5,7 +5,7 @@
   min-height: 100vh;
   min-height: 100dvh;
   width: 100%;
-  @include mix.flex($direction: column);
+  @include mix.flex($direction: column, $justify: flex-start);
 
   &_spacer {
     flex: 1;
@@ -19,7 +19,6 @@
   }
   &_inner {
     flex: 1;
-    height: 100%;
     max-height: 700px;
     @include mix.flex($direction: column, $justify: space-around);
   }
