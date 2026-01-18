@@ -12,8 +12,8 @@
 
 .skills {
   position: relative;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   @include mix.flex($direction: column);
   z-index: 1;
@@ -30,6 +30,7 @@
   }
 
   &_inner {
+    flex: 1;
     height: 100%;
     max-height: 800px;
     width: 100%;

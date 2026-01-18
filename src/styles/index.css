@@ -272,8 +272,8 @@ select {
 }
 
 .hero {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,6 +301,9 @@ select {
   min-height: 10px;
 }
 .hero_inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   max-height: 700px;
   display: -webkit-box;
@@ -475,8 +478,8 @@ select {
 }
 .skills {
   position: relative;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,6 +508,9 @@ select {
   min-height: 10px;
 }
 .skills_inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 100%;
   max-height: 800px;
   width: 100%;
@@ -951,8 +957,8 @@ select {
 }
 
 .contact {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
