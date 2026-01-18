@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
@@ -7,6 +8,11 @@ import Skills from "./components/Skills";
 import LightCircle from "./utils/LightCircle"; // nouveau composant
 
 function App() {
+  // 🔹 micro-scroll invisible pour forcer le recalcul sur mobile
+  useEffect(() => {
+    window.scrollBy(0, 0.1);
+  }, []);
+
   return (
     <>
       <Nav />

@@ -188,6 +188,11 @@ select {
   z-index: 10;
   pointer-events: none;
 }
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 .nav_list {
   width: 100%;
   display: -webkit-box;
