@@ -1,21 +1,14 @@
 import { useState, useEffect } from "react";
 
-export default function useViewportHeight() {
-  const getHeight = () => window.innerHeight;
-
-  const [viewportHeight, setViewportHeight] = useState(getHeight());
+function useViewportHeight() {
+  const [vh, setVh] = useState(0);
 
   useEffect(() => {
-    const handleResize = () => setViewportHeight(getHeight());
-
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("orientationchange", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      window.removeEventListener("orientationchange", handleResize);
-    };
+    // On fixe la hauteur à l'ouverture du site
+    setVh(window.innerHeight);
   }, []);
 
-  return viewportHeight;
+  return vh;
 }
+
+export default useViewportHeight;

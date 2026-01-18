@@ -109,7 +109,6 @@ select {
 .main {
   position: relative;
   height: 100vh;
-  height: 100dvh;
   background-color: #0a082e;
   overflow: auto;
   scroll-behavior: smooth;
@@ -273,7 +272,6 @@ select {
 
 .hero {
   min-height: 100vh;
-  min-height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,7 +476,6 @@ select {
 .skills {
   position: relative;
   min-height: 100vh;
-  min-height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,7 +953,6 @@ select {
 
 .contact {
   min-height: 100vh;
-  min-height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

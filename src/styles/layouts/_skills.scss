@@ -12,8 +12,8 @@
 
 .skills {
   position: relative;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100vh; // fallback
+  // min-height: 100dvh;
   width: 100%;
   @include mix.flex($direction: column, $justify: flex-start);
   z-index: 1;
