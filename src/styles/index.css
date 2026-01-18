@@ -180,6 +180,8 @@ select {
           align-items: center;
   background-color: rgba(237, 243, 255, 0.15);
   border: 1px solid rgba(237, 243, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -246,6 +248,9 @@ select {
   transition: transform ease 0.1s, color ease 0.1s;
   transition: transform ease 0.1s, color ease 0.1s, -webkit-transform ease 0.1s;
   pointer-events: auto;
+}
+.nav_list li a svg {
+  pointer-events: none;
 }
 .nav_list li a:hover {
   -webkit-transform: scale(1.15);

@@ -14,8 +14,8 @@
 
   background-color: rgba(var.$color-white, 0.15);
   border: 1px solid rgba(var.$color-white, 0.2);
-  // backdrop-filter: blur(10px);
-  // -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   border-radius: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -46,6 +46,10 @@
           transform ease 0.1s,
           color ease 0.1s;
         pointer-events: auto;
+
+        svg {
+          pointer-events: none;
+        }
 
         &:hover {
           transform: scale(1.15);
