@@ -2,10 +2,9 @@
 @use "../settings/mixins" as mix;
 
 .nav {
-  position: fixed;
+  position: sticky;
   top: 10px;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 0 auto;
 
   height: 50px;
   width: 300px;
