@@ -14,6 +14,10 @@ body {
   line-height: 1.5;
 }
 
+html {
+  forced-color-adjust: none;
+}
+
 body {
   color-scheme: light;
 }
