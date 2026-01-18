@@ -19,7 +19,6 @@
   border-radius: 10px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  pointer-events: none;
 
   &_list {
     width: 100%;
@@ -45,6 +44,7 @@
           transform ease 0.1s,
           color ease 0.1s;
         pointer-events: auto;
+        -webkit-tap-highlight-color: transparent;
 
         svg {
           pointer-events: none;
