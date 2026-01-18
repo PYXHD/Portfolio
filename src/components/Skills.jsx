@@ -11,9 +11,17 @@ import iconAdobe from "../assets/icons/des_adobe.svg";
 import iconUkFlag from "../assets/icons/lan_ukFlag.svg";
 import iconEsFlag from "../assets/icons/lan_esFlag.svg";
 
+import useViewportHeight from "../utils/ViewportHeight";
+
 function Skills() {
+  const viewportHeight = useViewportHeight();
+
   return (
-    <section className="skills" id="skills">
+    <section
+      className="skills"
+      id="skills"
+      style={{ minHeight: `${viewportHeight}px` }}
+    >
       <div className="skills_spacer top"></div>
       <div className="skills_inner">
         <img

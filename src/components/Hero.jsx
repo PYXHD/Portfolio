@@ -1,10 +1,17 @@
 import profilePic from "/public/profilePic.webp";
 import iconLinkedin from "../assets/icons/med_linkedin.svg";
 import iconGithub from "../assets/icons/med_github.svg";
+import useViewportHeight from "../utils/ViewportHeight";
 
 function Hero() {
+  const viewportHeight = useViewportHeight();
+
   return (
-    <section className="hero" id="hero">
+    <section
+      className="hero"
+      id="hero"
+      style={{ minHeight: `${viewportHeight}px` }}
+    >
       <div className="hero_spacer top"></div>
       <div className="hero_inner">
         <div className="hero_persona">

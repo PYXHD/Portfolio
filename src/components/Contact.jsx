@@ -1,8 +1,16 @@
 import profilePic from "/public/profilePic.webp";
 
+import useViewportHeight from "../utils/ViewportHeight";
+
 function Contact() {
+  const viewportHeight = useViewportHeight();
+
   return (
-    <section className="contact" id="contact">
+    <section
+      className="contact"
+      id="contact"
+      style={{ minHeight: `${viewportHeight}px` }}
+    >
       <div className="contact_spacerTop"></div>
       <div className="contact_inner">
         <h2 className="contact_title">Contact</h2>

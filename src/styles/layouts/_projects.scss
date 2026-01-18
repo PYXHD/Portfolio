@@ -3,7 +3,7 @@
 
 // Container
 .projects {
-  min-height: 100vh;
+  min-height: auto;
   width: 100%;
   max-width: 1200px;
   @include mix.flex($direction: column);
