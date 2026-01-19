@@ -16,10 +16,7 @@ body {
 
 html {
   forced-color-adjust: none;
-}
-
-body {
-  color-scheme: light;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -108,10 +105,8 @@ select {
 
 .main {
   position: relative;
-  height: 100vh;
   background-color: #0a082e;
-  overflow: auto;
-  scroll-behavior: smooth;
+  overflow: visible;
 }
 .main_overlay {
   position: relative;

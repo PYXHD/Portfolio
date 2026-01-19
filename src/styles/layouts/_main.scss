@@ -39,10 +39,8 @@
 // Main
 .main {
   position: relative;
-  height: 100vh;
   background-color: var.$color-darkBlue;
-  overflow: auto;
-  scroll-behavior: smooth;
+  overflow: visible;
 
   &_overlay {
     position: relative;
