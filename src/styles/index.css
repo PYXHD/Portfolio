@@ -830,6 +830,9 @@ select {
   gap: 10px;
   height: 40px;
 }
+.project_icons img {
+  height: 30px;
+}
 .project_img {
   width: 90%;
   border-radius: 10px;

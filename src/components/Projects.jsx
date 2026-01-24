@@ -1,5 +1,6 @@
 import Artboard from "./Artboard";
 import Barbeershop from "./Barbeershop";
+import Cryptowatch from "./Cryptowatch";
 
 function Projects() {
   return (
@@ -7,7 +8,7 @@ function Projects() {
       <div className="projects_spacer top"></div>
       <h2 className="projects_title">Mes Projets</h2>
       <div className="projects_inner">
-        {/* <Artboard /> */}
+        <Cryptowatch />
         <Artboard />
         <Barbeershop />
       </div>

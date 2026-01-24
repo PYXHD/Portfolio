@@ -79,6 +79,10 @@
     @include mix.flex;
     gap: 10px;
     height: 40px;
+
+    img {
+      height: 30px;
+    }
   }
 
   &_img {
