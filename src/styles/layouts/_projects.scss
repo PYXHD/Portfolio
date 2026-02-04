@@ -2,10 +2,13 @@
 @use "../settings/mixins" as mix;
 
 // Container
+
 .projects {
   width: 100%;
   max-width: 1200px;
+
   @include mix.flex($direction: column);
+
   gap: 40px;
   margin: 0 auto;
 
@@ -15,6 +18,7 @@
     &.top {
       min-height: 80px;
     }
+
     &.bottom {
       min-height: 10px;
     }
@@ -22,52 +26,64 @@
 
   &_inner {
     @include mix.flex($direction: column);
+
     gap: 80px;
 
-    @media (min-width: 1024px) {
-      flex-direction: row;
+    @media (min-width: var.$breakpoint-desktop) {
       align-items: stretch;
+      flex-direction: row;
       gap: 60px;
     }
   }
 
   &_title {
     @include mix.secondTitle;
-    text-transform: uppercase;
+
     text-decoration: underline;
+    text-transform: uppercase;
   }
 }
 
 // Project
+
 .project {
+  width: 100%;
+  max-width: 600px;
+
   @include mix.flex(
     $direction: column,
     $justify: space-between,
     $align: flex-start
   );
+
   gap: 40px;
   padding: 20px;
+
   border-top: 2px solid rgba(var.$color-white, 0.4);
   border-bottom: 2px solid rgba(var.$color-white, 0.4);
-  width: 100%;
-  max-width: 600px;
 
   &_description {
     width: 100%;
+
     @include mix.flex($direction: column, $justify: space-between);
+
     gap: 20px;
   }
 
   &_date {
+    align-self: flex-start;
+
     @include mix.date;
+
     padding: 2px 8px;
+
     border: 2px solid var.$color-lightBlue;
     border-radius: 8px;
-    align-self: flex-start;
   }
 
   &_titleInner {
     width: 100%;
+
     @include mix.flex($direction: column, $align: flex-start);
   }
 
@@ -77,8 +93,8 @@
 
   &_icons {
     @include mix.flex;
+
     gap: 10px;
-    height: 40px;
 
     img {
       height: 30px;
@@ -86,12 +102,16 @@
   }
 
   &_img {
-    width: 90%;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+
     border-radius: 10px;
   }
 
   &_textInner {
     @include mix.flex($direction: column);
+
     gap: 10px;
   }
 
@@ -101,16 +121,21 @@
 
   &_btnInner {
     width: 100%;
+
     @include mix.flex($direction: column, $justify: center, $align: center);
+
     gap: 20px;
     margin-top: auto;
+
     align-self: flex-end;
   }
 
   &_redBtn {
     @include mix.cta-red;
+
     margin-top: 30px;
   }
+
   &_blueBtn {
     @include mix.cta-blue;
   }

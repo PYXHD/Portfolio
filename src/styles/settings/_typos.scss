@@ -1,12 +1,25 @@
+// fonts
+
 @font-face {
-  font-family: "graphieBold";
-  src: url("../assets/fonts/graphie-Bold.otf");
+  font-family: "Graphie";
+  src: url("../assets/fonts/graphie-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "graphieSemiBold";
-  src: url("../assets/fonts/graphie-SemiBold.otf");
+  font-family: "Graphie";
+  src: url("../assets/fonts/graphie-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: "graphieBook";
-  src: url("../assets/fonts/graphie-Book.otf");
+  font-family: "Graphie";
+  src: url("../assets/fonts/graphie-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

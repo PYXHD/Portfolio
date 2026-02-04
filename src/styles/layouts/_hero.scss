@@ -1,9 +1,10 @@
 @use "../settings/variables" as var;
-@use "../settings//mixins" as mix;
+@use "../settings/mixins" as mix;
 
 .hero {
-  min-height: 100vh; // fallback
+  min-height: 100vh;
   // min-height: 100dvh;
+
   width: 100%;
   @include mix.flex($direction: column, $justify: flex-start);
 
@@ -13,23 +14,27 @@
     &.top {
       min-height: 80px;
     }
+
     &.bottom {
       min-height: 10px;
     }
   }
+
   &_inner {
     flex: 1;
     max-height: 700px;
+
     @include mix.flex($direction: column, $justify: space-around);
   }
+
   // persona
   &_persona {
     @include mix.flex($direction: column);
     gap: 15px;
 
     img {
-      height: 170px;
       width: 170px;
+      height: 170px;
 
       @media (max-height: 600px) {
         display: none;
@@ -53,26 +58,31 @@
   &_medias {
     @include mix.flex;
     gap: 40px;
+
     position: relative;
 
     &::after {
       content: "";
+
       position: absolute;
       bottom: -10px;
       left: 50%;
       transform: translateX(-50%);
+
       display: block;
-      height: 3px;
       width: 130%;
+      height: 3px;
+
       background-color: var.$color-white;
-      //   opacity: 0.4;
     }
   }
 
   &_link {
-    height: 50px;
     width: 50px;
+    height: 50px;
+
     @include mix.flex;
+
     transform: scale(1);
     transition: transform ease 0.1s;
 
@@ -82,11 +92,11 @@
   }
 
   &_linkCV {
-    height: 30px;
     width: 30px;
+    height: 30px;
+
     border-radius: 50%;
     background-color: var.$color-white;
-    font-family: var.$font-semibold;
     color: var.$color-darkBlue;
   }
 

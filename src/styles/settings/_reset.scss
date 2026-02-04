@@ -1,36 +1,61 @@
+// reset box model
+
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
+// base
+
 html,
 body {
   height: 100%;
   font-size: 100%;
   line-height: 1.5;
 }
+
 html {
   forced-color-adjust: none;
-  scroll-behavior: smooth;
 }
+
+// media query (accessibility)
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+// links
+
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
+
+// lists
+
 ul,
 ol {
   list-style: none;
 }
+
+// media
+
 img,
 picture,
 video,
 canvas,
 svg {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
+
+// forms
+
 input,
 button,
 textarea,

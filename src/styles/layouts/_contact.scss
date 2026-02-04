@@ -2,28 +2,26 @@
 @use "../settings/mixins" as mix;
 
 .contact {
-  min-height: 100vh; // fallback
+  min-height: 100vh;
   width: 100%;
+
   @include mix.flex($direction: column, $justify: flex-start);
 
   &_spacerTop {
     min-height: 80px;
   }
 
-  &_copyright {
-    margin-top: auto;
-    @include mix.text;
-    font-size: var.$fontSize-xs;
-  }
-
   &_inner {
     width: 100%;
+
     @include mix.flex($direction: column);
+
     gap: 40px;
   }
 
   &_title {
     @include mix.secondTitle;
+
     text-transform: uppercase;
     text-decoration: underline;
   }
@@ -31,32 +29,40 @@
   &_subInner {
     width: 100%;
     max-width: 400px;
+
     @include mix.flex($direction: column);
+
     gap: 30px;
+    padding: 40px;
 
     background-color: rgba(var.$color-white, 0.15);
     border: 1px solid rgba(var.$color-white, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
     border-radius: 10px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 
-    padding: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   &_text {
+    width: 100%;
+    max-width: 300px;
+
     @include mix.text;
-    width: 300px;
-    text-align: center;
   }
 
   &_img {
-    height: 120px;
     width: 120px;
+    height: 120px;
   }
 
   &_btn {
     @include mix.cta-red;
+  }
+
+  &_copyright {
+    margin-top: auto;
+
+    @include mix.copyright;
   }
 }
