@@ -362,6 +362,7 @@ select {
   font-weight: 600;
   font-size: 1.375rem;
   color: #edf3ff;
+  text-align: center;
 }
 .hero_motive {
   font-family: "Graphie", sans-serif;
@@ -465,6 +466,7 @@ select {
           transform: scale(0.98);
 }
 .hero_btn {
+  line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
 }

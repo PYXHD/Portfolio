@@ -47,6 +47,7 @@
 
   &_job {
     @include mix.secondTitle;
+    text-align: center;
   }
 
   &_motive {
@@ -102,6 +103,7 @@
   // button
   &_btn {
     @include mix.cta-red;
+    line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
   }
