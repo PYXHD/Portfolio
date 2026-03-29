@@ -1,25 +1,20 @@
 import profilePic from "/public/profilePic.webp";
 import iconLinkedin from "../assets/icons/med_linkedin.svg";
 import iconGithub from "../assets/icons/med_github.svg";
-import useViewportHeight from "../utils/ViewportHeight";
 
 function Hero() {
-  const viewportHeight = useViewportHeight();
-
   return (
-    <section
-      className="hero"
-      id="hero"
-      style={{ minHeight: `${viewportHeight}px` }}
-    >
+    <section className="hero" id="hero">
       <div className="hero_spacer top"></div>
       <div className="hero_inner">
         <div className="hero_persona">
           <img src={profilePic} alt="Photo de profil" fetchPriority="high" />
           <h1 className="hero_name">Marc CHARVOT</h1>
           <div>
-            <h2 className="hero_job">Développeur Web Junior</h2>
-            <p className="hero_motive">orienté front-end et design</p>
+            <h2 className="hero_job">Frontend React / Next.js</h2>
+            <p className="hero_motive">
+              UX • Performance • Interfaces modernes
+            </p>
           </div>
         </div>
         <div className="hero_medias">
@@ -47,7 +42,7 @@ function Hero() {
           </a>
         </div>
         <a href="#projects" className="hero_btn">
-          mes projets
+          voir mes projets
         </a>
       </div>
       <div className="hero_spacer bottom"></div>

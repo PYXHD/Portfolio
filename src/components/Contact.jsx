@@ -16,7 +16,7 @@ function Contact() {
         <h2 className="contact_title">Contact</h2>
         <div className="contact_subInner">
           <div className="contact_text">
-            Junior en développement, ouvert à vos projets et opportunités.
+            Développeur passionné, ouvert à de nouveaux projets et opportunités.
           </div>
           <img className="contact_img" src={profilePic} alt="Photo de profil" />
           <a href="mailto:pyxhd@outlook.fr" className="contact_btn">

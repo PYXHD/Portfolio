@@ -14,8 +14,7 @@
 .skills {
   position: relative;
   z-index: 1;
-
-  min-height: 100vh;
+  min-height: 800px;
   width: 100%;
 
   @include mix.flex($direction: column, $justify: flex-start);
@@ -37,11 +36,11 @@
 
     width: 100%;
     max-width: 600px;
-    max-height: 800px;
 
     padding: 10px;
 
     @include mix.flex($direction: column, $justify: space-between);
+    gap: 60px;
 
     background-color: rgba(var.$color-white, 0.15);
     border: 1px solid rgba(var.$color-white, 0.2);
@@ -75,13 +74,8 @@
 
   // about
   &_about {
-    width: 100%;
-
     @include mix.flex($direction: column, $align: flex-start);
-
-    @media (max-height: 600px) {
-      display: none;
-    }
+    width: 100%;
   }
 
   &_titleInner {
@@ -118,25 +112,16 @@
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas:
-      "stack design"
-      "stack langues";
 
-    gap: 20px;
-  }
+    gap: 60px;
 
-  &_stack {
-    grid-area: stack;
-  }
+    > *:first-child {
+      grid-column: 1 /-1;
+    }
 
-  &_design {
-    grid-area: design;
-  }
-
-  &_languages {
-    grid-area: langues;
-
-    align-self: end;
+    @media (max-width: var.$breakpoint-tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &_stackIcons {
@@ -151,8 +136,13 @@
     width: 100%;
 
     @include mix.flex;
+    flex-wrap: wrap;
 
-    gap: 40px;
+    gap: 20px;
+
+    & img {
+      max-height: 40px;
+    }
   }
 
   &_flag {

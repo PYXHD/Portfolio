@@ -2,9 +2,7 @@
 @use "../settings/mixins" as mix;
 
 .hero {
-  min-height: 100vh;
-  // min-height: 100dvh;
-
+  min-height: 800px;
   width: 100%;
   @include mix.flex($direction: column, $justify: flex-start);
 
@@ -25,6 +23,7 @@
     max-height: 700px;
 
     @include mix.flex($direction: column, $justify: space-around);
+    gap: 40px;
   }
 
   // persona
@@ -104,5 +103,6 @@
   &_btn {
     @include mix.cta-red;
     text-transform: uppercase;
+    text-align: center;
   }
 }

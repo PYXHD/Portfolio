@@ -280,7 +280,7 @@ select {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 800px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,6 +324,7 @@ select {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 40px;
 }
 .hero_persona {
   display: -webkit-box;
@@ -353,13 +354,13 @@ select {
 .hero_persona h1 {
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #edf3ff;
 }
 .hero_job {
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #edf3ff;
 }
 .hero_motive {
@@ -444,17 +445,17 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
+  padding: 15px;
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: #edf3ff;
   background-color: #ff7043;
   border-radius: 10px;
   cursor: pointer;
   -webkit-transition: background-color ease 0.1s;
   transition: background-color ease 0.1s;
-  text-transform: uppercase;
 }
 .hero_btn:hover {
   background-color: #ff8a65;
@@ -462,6 +463,10 @@ select {
 .hero_btn:active {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+}
+.hero_btn {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @-webkit-keyframes rotate {
@@ -488,7 +493,7 @@ select {
 .skills {
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 800px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +526,6 @@ select {
           flex: 1;
   width: 100%;
   max-width: 600px;
-  max-height: 800px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,6 +540,7 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 60px;
   background-color: rgba(237, 243, 255, 0.15);
   border: 1px solid rgba(237, 243, 255, 0.2);
   border-radius: 10px;
@@ -566,7 +571,6 @@ select {
           animation: rotate 40s linear infinite;
 }
 .skills_about {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,11 +584,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media (max-height: 600px) {
-  .skills_about {
-    display: none;
-  }
+  width: 100%;
 }
 .skills_titleInner {
   width: 100%;
@@ -606,7 +606,7 @@ select {
 .skills_title {
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: #edf3ff;
 }
 .skills_line {
@@ -631,18 +631,15 @@ select {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: "stack design" "stack langues";
-  gap: 20px;
+  gap: 60px;
 }
-.skills_stack {
-  grid-area: stack;
+.skills_list > *:first-child {
+  grid-column: 1/-1;
 }
-.skills_design {
-  grid-area: design;
-}
-.skills_languages {
-  grid-area: langues;
-  align-self: end;
+@media (max-width: 768px) {
+  .skills_list {
+    grid-template-columns: 1fr;
+  }
 }
 .skills_stackIcons {
   width: 100%;
@@ -676,7 +673,12 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.skills_stackSubDiv img {
+  max-height: 40px;
 }
 .skills_flag {
   display: -webkit-box;
@@ -764,7 +766,7 @@ select {
 .projects_title {
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #edf3ff;
   text-decoration: underline;
   text-transform: uppercase;
@@ -838,7 +840,7 @@ select {
 .project_title {
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: #00bcd4;
 }
 .project_icons {
@@ -921,17 +923,17 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
+  padding: 15px;
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: #edf3ff;
   background-color: #ff7043;
   border-radius: 10px;
   cursor: pointer;
   -webkit-transition: background-color ease 0.1s;
   transition: background-color ease 0.1s;
-  margin-top: 30px;
 }
 .project_redBtn:hover {
   background-color: #ff8a65;
@@ -939,6 +941,9 @@ select {
 .project_redBtn:active {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+}
+.project_redBtn {
+  margin-top: 30px;
 }
 .project_blueBtn {
   display: -webkit-box;
@@ -955,7 +960,7 @@ select {
   height: 50px;
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: #00bcd4;
   text-decoration: underline;
   background-color: rgba(237, 243, 255, 0.15);
@@ -1015,7 +1020,7 @@ select {
 .contact_title {
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   color: #edf3ff;
   text-transform: uppercase;
   text-decoration: underline;
@@ -1071,10 +1076,11 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
+  padding: 15px;
   font-family: "Graphie", sans-serif;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 1.25rem;
   color: #edf3ff;
   background-color: #ff7043;
   border-radius: 10px;
