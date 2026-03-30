@@ -110,9 +110,10 @@
   }
 
   &_textInner {
-    @include mix.flex($direction: column);
-
+    @include mix.flex($direction: column, $justify: space-between);
     gap: 10px;
+
+    height: 100%;
   }
 
   &_text {
