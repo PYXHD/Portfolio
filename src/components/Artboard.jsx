@@ -18,13 +18,12 @@ function Artboard() {
       </div>
       <div className="project_textInner">
         <p className="project_text">
-          Application web de dessin : personnalisation de la couleur et de la
-          taille du pinceau, pour expérimenter directement avec le HTML5 Canvas
-          et le DOM.
+          Application de dessin interactive avec personnalisation du pinceau
+          (couleur, taille), basée sur HTML5 Canvas.
         </p>
         <p className="project_text">
-          Ce projet m’a permis de mieux comprendre la manipulation du DOM et la
-          gestion d’événements en JavaScript.
+          Mise en pratique de la gestion des événements et de la manipulation
+          dynamique du DOM en JavaScript.
         </p>
       </div>
       <div className="project_btnInner">

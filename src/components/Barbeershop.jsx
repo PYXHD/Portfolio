@@ -22,13 +22,12 @@ function Barbeershop() {
       </div>
       <div className="project_textInner">
         <p className="project_text">
-          BarbeerShop est une entreprise fictive nécessitant un site Internet
-          ainsi qu'une communication marketing pour le web.
+          Création de BarbeerShop, une marque fictive, avec conception d’un site
+          web et d’une communication digitale associée.
         </p>
         <p className="project_text">
-          Il s’agit de mon premier projet, réalisé pour ma soutenance de
-          webdesigner. J’ai ensuite repris le concept sous React pour explorer
-          le développement front-end.
+          Projet initial de formation, ensuite refactorisé avec React pour
+          approfondir mes compétences en développement front-end.
         </p>
       </div>
       <div className="project_btnInner">

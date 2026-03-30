@@ -1,6 +1,7 @@
 import Artboard from "./Artboard";
-import Barbeershop from "./Barbeershop";
+// import Barbeershop from "./Barbeershop";
 import Cryptowatch from "./Cryptowatch";
+import Modjiz from "./Modjiz";
 
 function Projects() {
   return (
@@ -8,9 +9,9 @@ function Projects() {
       <div className="projects_spacer top"></div>
       <h2 className="projects_title">Mes Projets</h2>
       <div className="projects_inner">
+        <Modjiz />
         <Cryptowatch />
         <Artboard />
-        <Barbeershop />
       </div>
       <div className="projects_spacer bottom"></div>
     </section>

@@ -22,14 +22,12 @@ function Cryptowatch() {
       </div>
       <div className="project_textInner">
         <p className="project_text">
-          Application web d'analyse de cryptomonnaies : consultation des cours,
-          suivi des variations sur différentes périodes et affichage en temps
-          réel grâce aux API publiques (CoinGecko).
+          Application web d’analyse de cryptomonnaies offrant un suivi des cours
+          et des variations en temps réel grâce à l’API CoinGecko.
         </p>
         <p className="project_text">
-          Ce projet m’a permis de mieux comprendre la gestion des appels API,
-          l’asynchronisme en JavaScript (promises, async/await) et la
-          communication entre un frontend React/Vite et un backend Node/Express.
+          Développement centré sur les appels API, l’asynchronisme (async/await)
+          et l’architecture frontend React/Vite – backend Node/Express.
         </p>
       </div>
       <div className="project_btnInner">
