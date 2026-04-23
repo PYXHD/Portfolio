@@ -9,6 +9,7 @@ import iconReact from "../assets/icons/stack_react.svg";
 import iconNext from "../assets/icons/stack_next.svg";
 import iconThree from "../assets/icons/stack_three.svg";
 import iconJest from "../assets/icons/stack_jest.svg";
+import iconVitest from "../assets/icons/stack_vitest.svg";
 import iconGit from "../assets/icons/stack_git.svg";
 import iconGithub from "../assets/icons/med_github.svg";
 
@@ -82,6 +83,7 @@ function Skills() {
             <div className="skills_stackIcons">
               <div className="skills_stackSubDiv">
                 <img src={iconJest} alt="Jest Icon" />
+                <img src={iconVitest} alt="Vitest Icon" />
                 <img src={iconGit} alt="Git Icon" />
                 <img src={iconGithub} alt="Github Icon" />
               </div>
