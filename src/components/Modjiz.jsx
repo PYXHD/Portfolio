@@ -33,11 +33,7 @@ function Modjiz() {
         </p>
       </div>
       <div className="project_btnInner">
-        <a
-          className="project_redBtn"
-          href="https://modjiz.vercel.app/"
-          target="_blank"
-        >
+        <a className="project_redBtn" href="https://modjiz.fr/" target="_blank">
           Visiter le site
         </a>
         <a
