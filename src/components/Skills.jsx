@@ -2,23 +2,23 @@ import geodesique from "../assets/images/geodesique.webp";
 
 import iconHtml from "../assets/icons/stack_html.svg";
 import iconCSS from "../assets/icons/stack_css.svg";
-import iconSass from "../assets/icons/stack_sass.svg";
 import iconJs from "../assets/icons/stack_js_nude.svg";
 import iconTs from "../assets/icons/stack_ts.svg";
 import iconReact from "../assets/icons/stack_react.svg";
+import iconExpo from "../assets/icons/stack_expo.svg";
 import iconNext from "../assets/icons/stack_next.svg";
 import iconThree from "../assets/icons/stack_three.svg";
-import iconJest from "../assets/icons/stack_jest.svg";
 import iconVitest from "../assets/icons/stack_vitest.svg";
 import iconGit from "../assets/icons/stack_git.svg";
+import iconAndroid from "../assets/icons/stack_androidStudio.png";
+import iconPostgre from "../assets/icons/stack_postgre.svg";
+import iconFirebase from "../assets/icons/stack_firebase.svg";
+import iconSupabase from "../assets/icons/stack_supabase.svg";
 import iconGithub from "../assets/icons/med_github.svg";
 
 import iconFigma from "../assets/icons/des_figma.svg";
 import iconAdobe from "../assets/icons/des_adobe.svg";
 import iconBlender from "../assets/icons/des_blender.svg";
-
-import iconUkFlag from "../assets/icons/lan_ukFlag.svg";
-import iconEsFlag from "../assets/icons/lan_esFlag.svg";
 
 function Skills() {
   return (
@@ -36,14 +36,14 @@ function Skills() {
             <div className="skills_line"></div>
           </div>
           <p className="skills_details">
-            Développeur frontend spécialisé en React et Next.js, je conçois des
-            interfaces performantes et orientées utilisateur. Issu du design,
-            j’accorde une attention particulière à l’expérience utilisateur et à
-            la qualité du code.
+            Développeur Fullstack Web & Mobile, je conçois des applications avec
+            React, Next.js et Expo, de l’interface au backend. Issu du design,
+            j’accorde une attention particulière à l’expérience utilisateur, aux
+            interfaces interactives et à la qualité du code.
           </p>
           <p className="skills_details">
-            Je développe des applications web complètes et cherche à rejoindre
-            une équipe pour travailler sur des projets concrets.
+            Curieux et créatif, j’aime apprendre en transformant mes idées en
+            projets concrets.
           </p>
         </div>
         <div className="skills_list">
@@ -56,7 +56,6 @@ function Skills() {
               <div className="skills_stackSubDiv">
                 <img src={iconHtml} alt="HTML Icon" />
                 <img src={iconCSS} alt="CSS Icon" />
-                <img src={iconSass} alt="Sass Icon" />
                 <img src={iconJs} alt="Javascript Icon" />
                 <img src={iconTs} alt="Typescript Icon" />
               </div>
@@ -64,14 +63,27 @@ function Skills() {
           </div>
           <div className="skills_stack">
             <div className="skills_titleInner">
-              <h2 className="skills_title">Frameworks</h2>
+              <h2 className="skills_title">Web & Mobile</h2>
               <div className="skills_line"></div>
             </div>
             <div className="skills_stackIcons">
               <div className="skills_stackSubDiv">
                 <img src={iconReact} alt="React Icon" />
                 <img src={iconNext} alt="Next.js Icon" />
-                <img src={iconThree} alt="Three Icon" />
+                <img src={iconExpo} alt="Expo Icon" />
+              </div>
+            </div>
+          </div>
+          <div className="skills_stack">
+            <div className="skills_titleInner">
+              <h2 className="skills_title">Backend</h2>
+              <div className="skills_line"></div>
+            </div>
+            <div className="skills_stackIcons">
+              <div className="skills_stackSubDiv">
+                <img src={iconPostgre} alt="Postgre Icon" />
+                <img src={iconSupabase} alt="Supabase Icon" />
+                <img src={iconFirebase} alt="Firebase Icon" />
               </div>
             </div>
           </div>
@@ -82,43 +94,30 @@ function Skills() {
             </div>
             <div className="skills_stackIcons">
               <div className="skills_stackSubDiv">
-                <img src={iconJest} alt="Jest Icon" />
                 <img src={iconVitest} alt="Vitest Icon" />
                 <img src={iconGit} alt="Git Icon" />
                 <img src={iconGithub} alt="Github Icon" />
+                <img
+                  className="imgXl"
+                  src={iconAndroid}
+                  alt="Android studio Icon"
+                />
               </div>
             </div>
           </div>
           <div className="skills_stack">
             <div className="skills_titleInner">
-              <h2 className="skills_title">Design</h2>
+              <h2 className="skills_title">Design & 3D</h2>
               <div className="skills_line"></div>
             </div>
             <div className="skills_stackSubDiv">
               <img src={iconFigma} alt="Figam Icon" />
               <img src={iconAdobe} alt="Adobe Icon" />
               <img src={iconBlender} alt="Blender Icon" />
+              <img src={iconThree} alt="Three Icon" />
             </div>
 
             <div className="skills_stackIcons"></div>
-          </div>
-          <div className="skills_stack">
-            <div className="skills_titleInner">
-              <h2 className="skills_title">Langues</h2>
-              <div className="skills_line"></div>
-            </div>
-            <div className="skills_stackIcons">
-              <div className="skills_stackSubDiv">
-                <div className="skills_flag">
-                  <img src={iconUkFlag} alt="British FLag" />
-                  <div className="level">C1</div>
-                </div>
-                <div className="skills_flag">
-                  <img src={iconEsFlag} alt="Spanish Flag" />
-                  <div className="level">B1/B2</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

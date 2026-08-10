@@ -9,11 +9,12 @@ function Hero() {
       <div className="hero_inner">
         <div className="hero_persona">
           <img src={profilePic} alt="Photo de profil" fetchPriority="high" />
-          <h1 className="hero_name">Marc CHARVOT</h1>
+          <h1>Marc CHARVOT</h1>
           <div>
-            <h2 className="hero_job">Frontend React / Next.js</h2>
+            <h2 className="hero_job">Développeur Fullstack</h2>
+            <p className="hero_subJob">Web & Mobile</p>
             <p className="hero_motive">
-              UX • Performance • Interfaces modernes
+              Créativité • UX • Expériences interactives
             </p>
           </div>
         </div>

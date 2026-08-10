@@ -29,7 +29,7 @@
   // persona
   &_persona {
     @include mix.flex($direction: column);
-    gap: 15px;
+    gap: 30px;
 
     img {
       width: 170px;
@@ -46,6 +46,12 @@
   }
 
   &_job {
+    @include mix.mainTitle;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &_subJob {
     @include mix.secondTitle;
     text-align: center;
   }

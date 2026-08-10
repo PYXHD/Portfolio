@@ -340,7 +340,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 15px;
+  gap: 30px;
 }
 .hero_persona img {
   width: 170px;
@@ -358,6 +358,14 @@ select {
   color: #edf3ff;
 }
 .hero_job {
+  font-family: "Graphie", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #edf3ff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hero_subJob {
   font-family: "Graphie", sans-serif;
   font-weight: 600;
   font-size: 1.375rem;
@@ -528,7 +536,7 @@ select {
           flex: 1;
   width: 100%;
   max-width: 600px;
-  padding: 10px;
+  padding: 30px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,7 +641,7 @@ select {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  gap: 60px;
+  gap: 40px;
 }
 .skills_list > *:first-child {
   grid-column: 1/-1;
@@ -677,10 +685,13 @@ select {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 .skills_stackSubDiv img {
-  max-height: 40px;
+  height: 40px;
+}
+.skills_stackSubDiv img.imgXl {
+  height: 44px;
 }
 .skills_flag {
   display: -webkit-box;
